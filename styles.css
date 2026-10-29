@@ -87,18 +87,19 @@ h2, h3 { font-size: var(--heading); font-weight: 500; line-height: 1.3; letter-s
 .work-list { display: grid; gap: var(--s16); }
 .work-preview + .work-preview { padding-top: var(--s16); border-top: 1px solid var(--line); }
 .work-preview-link { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--s12); align-items: start; border: 0; padding: 0; }
-.work-artwork { aspect-ratio: 16 / 9; overflow: hidden; background: var(--surface); }
+.work-artwork { aspect-ratio: 16 / 9; overflow: hidden; background: var(--surface); border-radius: 12px; transform: translateZ(0); transition: transform .3s ease-in-out; }
+/* Homepage project images shrink to 95% on hover, like the About me photos. The hover is read from the
+   whole project row (which never moves), and only the image area shrinks; the title and text stay put. */
+@media (hover: hover) and (pointer: fine) {
+    .work-artwork { will-change: transform; }
+    .work-preview-link:hover .work-artwork { transform: translateZ(0) scale(.95); }
+}
+.work-preview-link:focus-visible .work-artwork { transform: translateZ(0) scale(.95); }
 .work-artwork-full { display: block; width: 100%; height: 100%; object-fit: contain; }
 .work-artwork-quadgo { display: flex; justify-content: center; align-items: center; gap: var(--s6); padding: var(--s8); }
-.work-artwork-quadgo img { display: block; height: 88%; width: auto; min-width: 0; object-fit: contain; box-shadow: var(--preview-shadow); transform: translateY(var(--s3)); transition: transform var(--preview-motion); }
+.work-artwork-quadgo img { display: block; height: 88%; width: auto; min-width: 0; object-fit: contain; box-shadow: var(--preview-shadow); transform: translateY(var(--s3)); }
 .work-artwork-quadgo img:nth-child(2) { height: 100%; transform: translateY(calc(-1 * var(--s2))); }
 .work-preview-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 8px; }
-.work-preview-link:focus-visible .work-artwork-quadgo img { transform: translateY(var(--s2)); }
-.work-preview-link:focus-visible .work-artwork-quadgo img:nth-child(2) { transform: translateY(calc(-1 * var(--s3))); }
-@media (hover: hover) and (pointer: fine) {
-    .work-preview-link:hover .work-artwork-quadgo img { transform: translateY(var(--s2)); }
-    .work-preview-link:hover .work-artwork-quadgo img:nth-child(2) { transform: translateY(calc(-1 * var(--s3))); }
-}
 .work-text { display: flex; flex-direction: column; gap: var(--s3); padding-top: var(--s1); }
 .work-text h3 { font-size: var(--title); font-weight: 500; letter-spacing: -.025em; line-height: 1.2; }
 .work-discipline { color: var(--muted); font-size: var(--meta); }
@@ -377,14 +378,4 @@ section[tabindex="-1"]:focus { outline: none; }
 }
 @media (max-width: 600px) {
     .case-meta .case-details { grid-template-columns: 1fr; gap: var(--s4); }
-}
-
-/* Case study images: rounded corners and the same hover shrink as the About me photos.
-   Only the image moves; its wrapper (.media) holds the hover, so panels and captions stay put
-   and the image cannot shrink out from under the pointer. */
-.media { display: block; }
-.media img { border-radius: 12px; transform: translateZ(0); transition: transform .3s ease-in-out; }
-@media (hover: hover) and (pointer: fine) {
-    .media img { will-change: transform; }
-    .media:hover img { transform: translateZ(0) scale(.95); }
 }
