@@ -73,10 +73,12 @@ h2, h3 { font-size: var(--heading); font-weight: 500; line-height: 1.3; letter-s
 .meta { font-family: var(--mono); font-size: var(--small); color: var(--muted); }
 .template-note { font-size: var(--meta); color: var(--muted); margin-top: var(--s6); max-width: 70ch; }
 
-/* Homepage: statement */
-.statement { padding-bottom: var(--s8); }
-.statement h1 { font-size: clamp(1.625rem, 1.2rem + 1.4vw, 2.25rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.3; max-width: 36ch; margin: 0; }
-.statement h1 span { color: var(--muted); }
+/* Homepage: name and focus */
+.statement { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--s12); align-items: end; padding-bottom: var(--s12); border-bottom: 1px solid var(--line); }
+.statement h1 { font-size: clamp(3rem, 1.6rem + 5vw, 6rem); font-weight: 600; letter-spacing: -.045em; line-height: .95; margin: 0; }
+.statement-text { display: flex; flex-direction: column; gap: var(--s4); padding-bottom: .35em; }
+.statement-text p { font-size: 1.125rem; line-height: 1.55; color: var(--body); max-width: 44ch; }
+.statement-text .statement-focus { font-family: var(--mono); font-size: var(--small); color: var(--muted); line-height: 1.7; }
 
 /* Homepage: work */
 .section { padding-top: var(--s12); }
@@ -182,6 +184,8 @@ h2, h3 { font-size: var(--heading); font-weight: 500; line-height: 1.3; letter-s
 
 /* Tablet */
 @media (max-width: 960px) {
+    .statement { grid-template-columns: 1fr; gap: var(--s6); align-items: start; }
+    .statement-text { padding-bottom: 0; }
     .work-preview-link { grid-template-columns: 1fr; gap: var(--s6); }
     .work-text { max-width: 60ch; }
     .about-grid { grid-template-columns: 1fr; gap: var(--s8); }
@@ -198,8 +202,8 @@ h2, h3 { font-size: var(--heading); font-weight: 500; line-height: 1.3; letter-s
     h1 { font-size: 2.625rem; }
     .intro { font-size: 1.125rem; }
     .site-nav { gap: var(--s4); }
-    .statement { padding-bottom: var(--s4); }
-    .statement h1 { font-size: 1.375rem; line-height: 1.35; }
+    .statement { padding-bottom: var(--s8); }
+    .statement-text p { font-size: var(--body-size); }
     .section { padding-top: var(--s12); }
     .work-list { gap: var(--s12); }
     .work-preview + .work-preview { padding-top: var(--s12); }
