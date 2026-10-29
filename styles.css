@@ -378,3 +378,13 @@ section[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 600px) {
     .case-meta .case-details { grid-template-columns: 1fr; gap: var(--s4); }
 }
+
+/* Case study images: rounded corners and the same hover shrink as the About me photos.
+   Only the image moves; its wrapper (.media) holds the hover, so panels and captions stay put
+   and the image cannot shrink out from under the pointer. */
+.media { display: block; }
+.media img { border-radius: 12px; transform: translateZ(0); transition: transform .3s ease-in-out; }
+@media (hover: hover) and (pointer: fine) {
+    .media img { will-change: transform; }
+    .media:hover img { transform: translateZ(0) scale(.95); }
+}
