@@ -3,121 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QuadGo: a UIUC student fitness-app concept. A case study in interface design, Figma prototyping, and collaborative usability evaluation by Gavin Wang.">
+    <meta name="description" content="QuadGo: a UIUC student fitness-app prototype. A case study in user research, usability evaluation, and Figma prototyping by Gavin Wang.">
     <title>QuadGo — Gavin Wang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=quadgo-case-study-1">
+    <link rel="stylesheet" href="../styles.css?v=oct29">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <main id="main" class="page case-study">
-        <nav class="case-nav" aria-label="Portfolio"><a href="../index.html#work">← Selected work</a><span class="meta">Gavin Wang</span></nav>
-        <header><p class="label">QUADGO · FIGMA PROTOTYPE</p><h1>QuadGo</h1><p class="intro">A fitness-app prototype designed to help UIUC students fit physical activity into busy schedules through flexible workout planning, campus activity discovery, and social motivation.</p></header>
-        <dl class="case-details">
-            <div><dt>My role</dt><dd>UI/UX design, prototyping &amp; user evaluation</dd></div>
-            <div><dt>Context</dt><dd>Academic team project · UIUC students</dd></div>
-            <div><dt>Deliverable</dt><dd>Interactive Figma prototype</dd></div>
-        </dl>
-        <p class="prototype-link"><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Try the Figma prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
+    <header class="site-bar">
+        <div class="frame">
+            <a class="site-name" href="../index.html">Gavin Wang</a>
+            <nav class="site-nav" aria-label="Site">
+                <a href="../index.html#work" aria-current="page">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../output/pdf/gavin-wang-resume.pdf" download>Résumé<span class="sr-only"> (PDF)</span></a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="frame page case-study">
+        <header class="case-header"><p class="label">02 · USER RESEARCH · PRODUCT DESIGN</p><h1>QuadGo</h1><p class="intro">A fitness-app prototype designed to help UIUC students fit physical activity into busy schedules through flexible workout planning, campus activity discovery, and social motivation.</p></header>
+        <div class="case-hero">
         <div class="project-screens">
-            <img src="../assets/images/quadgo/home.png" width="402" height="874" alt="QuadGo home dashboard and daily workout plan.">
-            <img src="../assets/images/quadgo/map.png" width="402" height="874" alt="Campus exercise locations on the QuadGo map.">
-            <img src="../assets/images/quadgo/workout-plan.png" width="402" height="874" alt="A generated 15-minute indoor workout plan.">
+        <img src="../assets/images/quadgo/home.png" width="402" height="874" alt="QuadGo home dashboard and daily workout plan.">
+        <img src="../assets/images/quadgo/map.png" width="402" height="874" alt="Campus exercise locations on the QuadGo map.">
+        <img src="../assets/images/quadgo/workout-plan.png" width="402" height="874" alt="A generated 15-minute indoor workout plan.">
         </div>
         <p class="template-note">Home, campus activity discovery, and a sample workout plan. QuadGo is a design prototype; the activity totals, crowd levels, and rewards shown are demonstration content.</p>
-        <nav class="case-contents links" aria-label="Case study sections">
-            <a href="#problem">Problem</a><a href="#decisions">Design decisions</a><a href="#evaluation">Evaluation</a><a href="#reflection">Reflection</a>
-        </nav>
+        </div>
+        <div class="case-layout">
+            <aside class="case-aside" aria-label="Project details">
+                <dl class="case-details">
+                <div><dt>My role</dt><dd>UX Researcher &amp; Product Designer</dd></div>
+                <div><dt>Context</dt><dd>Four-person course project · Spring 2026</dd></div>
+                <div><dt>Research</dt><dd>18 students in needs-finding · 12 in summative testing</dd></div>
+                </dl>
+                <p class="prototype-link"><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Try the Figma prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
+                <nav class="case-contents" aria-label="Case study sections">
+                <a href="#problem">Problem</a><a href="#research">Research</a><a href="#changes">Before &amp; after</a><a href="#evaluation">Evaluation</a><a href="#reflection">Reflection</a>
+                </nav>
+            </aside>
+            <div class="case-body">
+            <section class="case-section case-prose" aria-labelledby="contribution-title">
+                <h2 id="contribution-title">My contribution</h2>
+                <p>I worked with Dhruv Sawhney, Colin Roland, and Kaushik Setty on a four-person team. As UX researcher, I led the project’s three rounds of research and evaluation: surveys and interviews during needs-finding, a heuristic review and formative evaluation of our first prototype, and a summative study comparing the first and revised designs.</p>
+                <p>As product designer, I designed and built the Figma interface and interactive prototype: end-to-end user flows, a shared set of components and styles, and high-fidelity screens across onboarding, the dashboard, map, challenges, rewards, and social features. I implemented refinements from both evaluation rounds, folding in teammates’ suggestions; Dhruv also implemented updates after the summative study.</p>
+                <p>For the summative study I designed the comparison protocol and rating survey, moderated three of the twelve sessions, and set up the analysis. Each teammate moderated three sessions and contributed to the analysis and report.</p>
+            </section>
 
-        <section class="case-section case-prose" aria-labelledby="contribution-title">
-            <h2 id="contribution-title">My contribution</h2>
-            <p>I worked with Dhruv Sawhney, Colin Roland, and Kaushik Setty on a four-person team. I designed and built the base Figma interface and interactive prototype, then implemented refinements informed by user feedback and my teammates’ suggestions.</p>
-            <p>I also contributed to the comparative study design, evaluation setup, and analysis of participant ratings and feedback. My portion of the final evaluation involved three participants. Research, feature direction, and later refinements were collaborative; Dhruv also implemented updates following the latest evaluation.</p>
-        </section>
+            <section id="problem" class="case-section case-prose" aria-labelledby="problem-title">
+                <h2 id="problem-title">Making room for exercise</h2>
+                <p>QuadGo began as a fitness-tracking concept for UIUC students. Our research pointed to a broader problem: wanting to exercise did not necessarily mean students had the time, motivation, or a convenient place to do it. Academic workloads and crowded facilities could make even a short workout feel difficult to arrange.</p>
+                <p>We shifted the design toward helping students decide what to do and where to go. The central question became: how could we make physical activity easier to fit into an ordinary student day?</p>
+            </section>
 
-        <section id="problem" class="case-section case-prose" aria-labelledby="problem-title">
-            <h2 id="problem-title">Making room for exercise</h2>
-            <p>QuadGo began as a fitness-tracking concept for UIUC students. Our early research pointed to a broader problem: wanting to exercise did not necessarily mean students had the time, motivation, or a convenient place to do it. Academic workloads and crowded facilities could make even a short workout feel difficult to arrange.</p>
-            <p>We shifted the design toward helping students decide what to do and where to go. The central question became: how could we make physical activity easier to fit into an ordinary student day?</p>
-            <h3>What we took from the research</h3>
-            <p>The team’s earlier surveys and interviews, reported as involving 18 participants, informed three priorities:</p>
-            <ul>
-                <li><strong>Fit the available time.</strong> Offer short, flexible options rather than assuming everyone can commit to a long gym session.</li>
-                <li><strong>Make alternatives visible.</strong> Help students explore exercise locations beyond the campus fitness centers and see useful information before choosing.</li>
-                <li><strong>Support motivation.</strong> Explore streaks, rewards, and social participation as possible reasons to return, while keeping the practical planning tools easy to reach.</li>
-            </ul>
-        </section>
+            <section id="research" class="case-section case-prose" aria-labelledby="research-title">
+                <h2 id="research-title">Three rounds of research and evaluation</h2>
+                <h3>Round 1 · Needs-finding with 18 students</h3>
+                <p>Surveys and interviews with 18 UIUC students looked at what kept them from exercising regularly and what would bring them back. Three survey results shaped the feature set:</p>
+                <dl class="stat-list">
+                    <div><dt>62%</dt><dd>said time constraints in their daily schedule got in the way of exercise.</dd></div>
+                    <div><dt>50%</dt><dd>said they were most motivated by earning real-world rewards for exercising.</dd></div>
+                    <div><dt>40%</dt><dd>named a barrier that exercising away from the main campus gyms (ARC, CRCE) could remove.</dd></div>
+                </dl>
+                <ul>
+                    <li><strong>Fit the available time.</strong> Offer short, flexible options rather than assuming everyone can commit to a long gym session.</li>
+                    <li><strong>Make alternatives visible.</strong> Help students find exercise locations beyond the campus fitness centers and see useful information before choosing.</li>
+                    <li><strong>Give a reason to return.</strong> Explore streaks, rewards, and social participation, while keeping the practical planning tools easy to reach.</li>
+                </ul>
+                <h3>Round 2 · Heuristic review and formative evaluation</h3>
+                <p>I reviewed the first prototype against usability heuristics alongside a formative evaluation with students. Four problems stood out, and each became a change in the next version:</p>
+                <ul>
+                    <li><strong>The map couldn’t answer “should I go there?”</strong> Location markers weren’t clickable, so the details needed to choose a place were out of reach.</li>
+                    <li><strong>The daily plan felt cut off.</strong> Students saw the planner as separate from Home, and the plan couldn’t be adjusted.</li>
+                    <li><strong>Rewards were hard to find.</strong> The screen for redeeming earned rewards wasn’t easy to reach from Home.</li>
+                    <li><strong>Leaderboards were hard to read.</strong> There was a single ranking, and feedback asked for clearer, tappable categories.</li>
+                </ul>
+                <h3>Round 3 · Summative comparison with 12 students</h3>
+                <p>Twelve college students, with exercise habits ranging from under twice a week to six times a week, compared the first and revised designs side by side. The method and results are under <a href="#evaluation">Evaluation</a>.</p>
+            </section>
 
-        <section id="decisions" class="case-section case-prose" aria-labelledby="decisions-title">
-            <h2 id="decisions-title">Three decisions that shaped the prototype</h2>
-            <h3>1. Ask one planning question at a time</h3>
-            <p>The workout generator breaks planning into a short sequence: choose an available duration, choose indoors or outdoors, then see a suggested routine. This uses progressive disclosure—showing the choices needed at each step—to avoid asking someone to build an entire plan at once.</p>
-            <p>The sample result combines a warm-up, a cardio interval, and a cool down. It demonstrates the intended interaction; the Figma prototype does not generate personalized exercise recommendations.</p>
-            <ol class="case-flow">
-                <li><strong>Time</strong><span>15, 30, 45, or 60 minutes</span></li>
-                <li><strong>Location</strong><span>Indoors or outdoors</span></li>
-                <li><strong>Plan</strong><span>A suggested workout sequence</span></li>
-            </ol>
-            <h3>2. Put location details where the decision happens</h3>
-            <p>The earlier map showed exercise locations, but its markers did not open details. We made locations interactive and brought activities, distance, reward points, and a crowd indicator into a location pop-up. Students could inspect an option directly from the map.</p>
-            <figure class="case-figure">
-                <img src="../assets/images/quadgo/map-location-popup.png" width="266" height="580" alt="Main Quad pop-up showing available activities, distance, reward points, and an example facility crowd meter." loading="lazy">
-                <figcaption>The Main Quad pop-up groups the information needed to consider a location. Crowd and distance values are illustrative prototype data.</figcaption>
-            </figure>
-            <h3>3. Keep a guided plan editable</h3>
-            <p>A suggested routine should still leave room for personal preferences. We added editing and task creation to the daily planner, and made the plan easier to find from Home. Students could follow a recommendation or create their own workout tasks.</p>
-            <p>Streaks, badges, and points provided a second layer of encouragement around these practical tools. Social leaderboards offered friends, campus, and all-time views.</p>
-        </section>
+            <section id="changes" class="case-section case-prose" aria-labelledby="changes-title">
+                <h2 id="changes-title">What changed, before and after</h2>
+                <h3>1. Plan a workout one question at a time</h3>
+                <p>A new guided generator breaks planning into a short sequence: choose an available duration, choose indoors or outdoors, then see a suggested routine. Showing only the choice needed at each step (progressive disclosure) avoids asking someone to build an entire plan at once, and options start at 15 minutes for the 62% who cited time constraints.</p>
+                <figure class="screen-compare" style="--cols: 3">
+                    <div class="screen-compare-grid">
+                        <figure><img src="../assets/images/quadgo/generator-time.png" width="402" height="873" alt="Generator step one: How much time do you have? with 15, 30, 45, and 60 minute options." loading="lazy"><figcaption><b>Step 1</b>Available time</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/generator-location.png" width="402" height="871" alt="Generator step two: Where will you workout? with Indoors and Outdoors choices." loading="lazy"><figcaption><b>Step 2</b>Indoors or outdoors</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/generator-plan.png" width="402" height="873" alt="Generator result: a 15-minute indoor plan with warm-up, cardio burst, and cool down." loading="lazy"><figcaption><b>Step 3</b>Suggested plan</figcaption></figure>
+                    </div>
+                    <figcaption>Three taps from Home to a plan. The sample result demonstrates the interaction; the prototype does not generate personalized recommendations.</figcaption>
+                </figure>
 
-        <section id="evaluation" class="case-section case-prose" aria-labelledby="evaluation-title">
-            <h2 id="evaluation-title">Evaluating the revised design</h2>
-            <p>Our summative evaluation involved 12 college students with different exercise habits, with three participants recorded under each team member. This was a separate stage from the earlier needs-finding research.</p>
-            <p>Participants compared the earlier and revised designs, described their reactions aloud, and tried tasks involving the workout planner, leaderboards, and exercise-location map. We collected feedback and 1–10 ratings of the redesigned features, asking for improvement suggestions when ratings were below seven.</p>
-            <h3>What participants told us</h3>
-            <ul>
-                <li><strong>Interactive cues generally matched expectations.</strong> Participants in my sessions described the flow as complete and appreciated that elements they expected to click actually worked.</li>
-                <li><strong>Location information helped with choosing a place.</strong> The team recorded positive feedback about the map pop-ups, including a participant who found the crowd indicator useful.</li>
-                <li><strong>Some controls still needed clearer signals.</strong> One participant was unsure whether leaderboard categories changed by tapping or swiping.</li>
-                <li><strong>Students wanted more flexibility and shared activity.</strong> Requests included joining challenges with friends, longer workout durations, and saving favorite locations.</li>
-            </ul>
-            <p>The ratings and comments gave us direction for refinement. They describe participants’ responses to a prototype, rather than measured improvements in fitness, retention, or long-term exercise habits.</p>
-        </section>
+                <h3>2. Put location details where the decision happens</h3>
+                <p>Every map marker now opens a pop-up with the activities available there, the distance, reward points, and a crowd indicator, so students can weigh an option without leaving the map. The crowd meter moved from a separate panel into each location.</p>
+                <figure class="screen-compare">
+                    <div class="screen-compare-grid">
+                        <figure><img src="../assets/images/quadgo/before-map.png" width="402" height="875" alt="Before: a map with location markers that open nothing, and a separate facility crowd meter for ARC and CRCE below." loading="lazy"><figcaption><b>Before</b>Markers only; crowd levels for two gyms in a separate panel.</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/after-map-popup.png" width="402" height="881" alt="After: the Main Quad pop-up shows activities, distance, reward points, and a crowd meter, with nearby activities listed below." loading="lazy"><figcaption><b>After</b>Each location opens its own details and crowd level.</figcaption></figure>
+                    </div>
+                    <figcaption>Crowd and distance values are illustrative prototype data.</figcaption>
+                </figure>
 
-        <section class="case-section case-prose" aria-labelledby="iteration-title">
-            <h2 id="iteration-title">Turning feedback into revisions</h2>
-            <p>The final report records another round of changes after the evaluation:</p>
-            <ul>
-                <li><strong>More control in the guided flow.</strong> Back navigation lets users recover from a mistaken choice, and clearer visual treatment helps explain the sequence.</li>
-                <li><strong>More context on the map.</strong> A current-location marker helps orient users among the exercise locations.</li>
-                <li><strong>More ways to participate.</strong> Group challenges extend the social concept beyond comparing leaderboard positions.</li>
-                <li><strong>More visible goals.</strong> Unearned badges and point incentives for the daily plan show what users can work toward.</li>
-            </ul>
-            <p>Other requests, such as favorite locations and workout options longer than an hour, remained opportunities for further exploration.</p>
-        </section>
+                <h3>3. Keep a guided plan editable, and on Home</h3>
+                <p>Today’s Plan gained an Edit action and a link into the generator, and students can now edit tasks or add their own. A suggested routine still leaves room for personal preferences.</p>
+                <figure class="screen-compare" style="--cols: 3">
+                    <div class="screen-compare-grid">
+                        <figure><img src="../assets/images/quadgo/before-home.png" width="402" height="875" alt="Before: Home with a fixed Today's Plan list and no way to change it." loading="lazy"><figcaption><b>Before</b>A fixed list.</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/after-home-edit.png" width="402" height="877" alt="After: Home with an Edit action on Today's Plan and a link reading Need help making your plan? No worries!" loading="lazy"><figcaption><b>After</b>Edit, plus a route into the generator.</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/after-edit-tasks.png" width="402" height="877" alt="After: the edit view of Today's Plan with an Add Task button." loading="lazy"><figcaption><b>After</b>Edit tasks or add your own.</figcaption></figure>
+                    </div>
+                </figure>
 
-        <section class="case-section case-prose" aria-labelledby="outcome-title">
-            <h2 id="outcome-title">What we delivered</h2>
-            <p>We delivered an interactive mobile-app prototype connecting a daily activity overview, workout planning, campus location discovery, challenges, and social progress. The work moved from a tracking concept toward a more practical sequence: find an option, make a plan, and see a reason to return.</p>
-            <p>For a quick walkthrough, start on Home, select the smart workout generator, choose 15 minutes and Indoors, and review the sample plan. Then explore Map and open a location to see its details.</p>
-            <p><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Explore the QuadGo prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
-        </section>
+                <h3>4. Turn one leaderboard into three</h3>
+                <p>The single ranking became Friends, Campus, and All Time views with clearer category tabs. Different comparisons give students different reasons to keep going.</p>
+                <figure class="screen-compare">
+                    <div class="screen-compare-grid">
+                        <figure><img src="../assets/images/quadgo/before-leaderboard.png" width="402" height="875" alt="Before: a single leaderboard list of five users." loading="lazy"><figcaption><b>Before</b>One ranking.</figcaption></figure>
+                        <figure><img src="../assets/images/quadgo/after-leaderboard-friends.png" width="402" height="874" alt="After: the Social screen with Friends, Campus, and All Time tabs, showing the Friends ranking." loading="lazy"><figcaption><b>After</b>Friends, Campus, and All Time.</figcaption></figure>
+                    </div>
+                </figure>
+                <p>Streaks, badges, and points provide a second layer of encouragement around these practical tools, and reward redemption became easier to reach from Home.</p>
+            </section>
 
-        <section id="reflection" class="case-section case-prose" aria-labelledby="reflection-title">
-            <h2 id="reflection-title">What I learned</h2>
-            <p>The most useful feedback came from watching people interpret the interface. A control that felt obvious to our team could still leave a participant wondering whether to tap or swipe. Those moments gave us specific changes to make, instead of relying only on our own familiarity with the design.</p>
-            <p>My main takeaway was to test earlier. A basic wireframe and a connected flow can already reveal problems with navigation and expectations; the interface does not have to be visually finished before that learning begins.</p>
-            <h3>What I would test next</h3>
-            <p>I would test the planning and map flows with clearer task-success and completion-time measures, and check that each prototype choice leads to a consistent result. Longer-term testing would then be needed to learn whether the planning tools, rewards, and social features actually help students maintain an exercise routine.</p>
-        </section>
+            <section id="evaluation" class="case-section case-prose" aria-labelledby="evaluation-title">
+                <h2 id="evaluation-title">Evaluating the revised design</h2>
+                <p>Each of the four team members moderated three participants. Participants compared the earlier and revised designs while thinking aloud, then tried tasks with the workout planner, leaderboards, and exercise-location map. Afterwards they rated each redesigned feature from 1 to 10; anyone rating below 7 was asked what should improve.</p>
+                <table class="data-table">
+                    <caption>Ratings of each redesigned feature (1–10)</caption>
+                    <thead><tr><th scope="col">Redesigned feature</th><th scope="col" class="num">All sessions (n = 12)</th><th scope="col" class="num">My sessions (n = 3)</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Guided workout generator</th><td class="num">8.8</td><td class="num">8.7</td></tr>
+                        <tr><th scope="row">Map pop-ups</th><td class="num">8.8</td><td class="num">9.7</td></tr>
+                        <tr><th scope="row">Editable daily plan</th><td class="num">8.8</td><td class="num">9.7</td></tr>
+                        <tr><th scope="row">Three leaderboards</th><td class="num">8.1</td><td class="num">7.7</td></tr>
+                    </tbody>
+                </table>
+                <p class="template-note">Means pooled from four groups of three. One group’s editable-plan average was reported as 9 for ratings of 7, 7, and 10; it is recalculated here as 8. The earlier design was not rated, so these scores describe how participants received the redesign, not a measured improvement.</p>
+                <h3>What participants told us</h3>
+                <ul>
+                    <li><strong>Interactive cues matched expectations.</strong> Participants in my sessions described the flow as complete; one noted that everything they expected to be clickable actually worked.</li>
+                    <li><strong>Location information helped with choosing a place.</strong> Participants responded well to the map pop-ups; one found the crowd indicator useful in deciding where to work out.</li>
+                    <li><strong>The leaderboard still needed clearer signals.</strong> It scored lowest, and one participant was unsure whether categories changed by tapping or swiping.</li>
+                    <li><strong>Students wanted more flexibility and shared activity.</strong> Requests included joining challenges with friends, workouts longer than an hour, and saving favorite locations.</li>
+                </ul>
+            </section>
 
-        <section class="case-section case-prose case-credits" aria-labelledby="credits-title">
-            <h2 id="credits-title">Team &amp; tools</h2>
-            <p>Gavin Wang, Dhruv Sawhney, Colin Roland, and Kaushik Setty. Designed and prototyped in Figma.</p>
-            <p>The team used Claude to generate some icon vectors and Figma Make to assist with additional leaderboard, task-editing, and guided-planning frames. These tools supported production alongside the team’s design, prototyping, and evaluation work.</p>
-        </section>
-        <footer><a href="project-02.html">← Netsuke Tiger Viewer</a><a href="../index.html#work">All work →</a></footer>
+            <section class="case-section case-prose" aria-labelledby="iteration-title">
+                <h2 id="iteration-title">Turning feedback into revisions</h2>
+                <p>The team made another round of changes after the summative study:</p>
+                <ul>
+                    <li><strong>More control in the guided flow.</strong> Back navigation lets users recover from a mistaken choice, and clearer visual treatment helps explain the sequence.</li>
+                    <li><strong>More context on the map.</strong> A current-location marker helps orient users among the exercise locations.</li>
+                    <li><strong>More ways to participate.</strong> Group challenges extend the social concept beyond comparing leaderboard positions.</li>
+                    <li><strong>More visible goals.</strong> Unearned badges and point incentives for the daily plan show what users can work toward.</li>
+                </ul>
+                <p>Other requests, such as favorite locations and workout options longer than an hour, remained opportunities for further exploration.</p>
+            </section>
+
+            <section class="case-section case-prose" aria-labelledby="outcome-title">
+                <h2 id="outcome-title">What we delivered</h2>
+                <p>We delivered an interactive mobile-app prototype connecting a daily activity overview, workout planning, campus location discovery, challenges, and social progress. The work moved from a tracking concept toward a more practical sequence: find an option, make a plan, and see a reason to return.</p>
+                <p>For a quick walkthrough, start on Home, select the smart workout generator, choose 15 minutes and Indoors, and review the sample plan. Then explore Map and open a location to see its details.</p>
+                <p><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Explore the QuadGo prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
+            </section>
+
+            <section id="reflection" class="case-section case-prose" aria-labelledby="reflection-title">
+                <h2 id="reflection-title">What I learned</h2>
+                <p>The most useful feedback came from watching people interpret the interface. A control that felt obvious to our team could still leave a participant wondering whether to tap or swipe. Those moments gave us specific changes to make, instead of relying only on our own familiarity with the design.</p>
+                <p>My main takeaway was to test earlier. A basic wireframe and a connected flow can already reveal problems with navigation and expectations; the interface does not have to be visually finished before that learning begins.</p>
+                <h3>What I would test next</h3>
+                <p>Our summative study rated the redesign only. Next time I would rate both versions on the same tasks and add task-success and completion-time measures, so the comparison shows a difference rather than a preference. I would also check that every prototype branch leads to a consistent result. Longer-term testing would then be needed to learn whether the planning tools, rewards, and social features help students keep an exercise routine.</p>
+            </section>
+
+            <section class="case-section case-prose case-credits" aria-labelledby="credits-title">
+                <h2 id="credits-title">Team &amp; tools</h2>
+                <p>Gavin Wang, Dhruv Sawhney, Colin Roland, and Kaushik Setty. Designed and prototyped in Figma. Before-and-after screens are taken from the team’s summative evaluation report.</p>
+                <p>The team used Claude to generate some icon vectors and Figma Make to assist with additional leaderboard, task-editing, and guided-planning frames. These tools supported production alongside the team’s design, prototyping, and evaluation work.</p>
+            </section>
+            </div>
+        </div>
+        <nav class="case-pager" aria-label="More projects"><a href="project-03.html">← MatchMate</a><a href="project-02.html">Netsuke Tiger Viewer →</a></nav>
     </main>
+    <footer class="site-footer">
+        <div class="frame"><span>© 2026 Gavin Wang</span><a href="#main">Back to top ↑</a></div>
+    </footer>
 </body>
 </html>

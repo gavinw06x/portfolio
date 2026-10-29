@@ -3,26 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MatchMate: a football-fan social prototype for finding live rooms, translated conversations, and a community across leagues.">
+    <meta name="description" content="MatchMate: a solo product-design project. A football-fan social prototype for finding live rooms, translated conversations, and a community across leagues.">
     <title>MatchMate — Gavin Wang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=netsuke-1">
+    <link rel="stylesheet" href="../styles.css?v=oct29">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <main id="main" class="page case-study">
-        <nav class="case-nav" aria-label="Portfolio"><a href="../index.html#work">← Selected work</a><span class="meta">Gavin Wang</span></nav>
-        <header><p class="label">01 · PRODUCT DESIGN</p><h1>MatchMate</h1><p class="intro">Find your fans. Share the match. A social matchday prototype for football fans watching far from home.</p></header>
-        <dl class="case-details"><div><dt>Focus</dt><dd>Product &amp; interaction design</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Format</dt><dd>iPhone app prototype</dd></div></dl>
-        <nav class="links" aria-label="MatchMate project links"><a href="https://gavinw06x.github.io/matchmate/prototype.html" target="_blank" rel="noopener noreferrer">Try the prototype ↗<span class="sr-only"> (opens in a new tab)</span></a><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">Full case study ↗<span class="sr-only"> (opens in a new tab)</span></a></nav>
-        <figure class="case-figure"><img src="../assets/images/matchmate/overview.png" width="1280" height="720" alt="MatchMate’s introduction alongside the Today screen and a live room with translated messages."><figcaption>The Today screen leads into a shared matchday conversation, with translation built into the room.</figcaption></figure>
-        <section class="case-section case-prose"><h2>Watching a match is easier than finding your people</h2><p>Fans who follow a club with a small local following can struggle to find people to watch with. Different languages, time zones, and leagues make that connection harder for international students, expats, and supporters living abroad.</p><p>MatchMate builds on an earlier Spring 2026 UX-course concept whose interviews identified isolation among fans watching less mainstream leagues abroad. The current project redesigns the app’s information architecture and flows around shared live viewing.</p></section>
-        <section class="case-section case-prose"><h2>From kickoff to a continuing connection</h2><ol class="case-flow"><li><strong>Find your match</strong><span>Today prioritizes followed clubs, live scores, local kickoff times, and reminders.</span></li><li><strong>Choose your room</strong><span>Compare languages, watchers, and chat speed before joining, or let Match me pick.</span></li><li><strong>Join the conversation</strong><span>Read translated messages, reveal the original text, and react to the room or individual goals.</span></li><li><strong>Stay connected after full time</strong><span>Explore the recap and follow the people you watched with.</span></li></ol></section>
-        <section class="case-section case-prose"><h2>Make a lively room feel understandable and safe</h2><p>The documented process compares visual directions, simplifies the Today screen, and refines the app’s accent color, controls, and surfaces. A review against Nielsen’s ten usability heuristics identifies issues with severity ratings and proposed fixes.</p><p>The resulting prototype includes spoiler-safe entry for delayed streams, message delivery states with retry, draft preservation during reconnection, and undo or confirmation for actions such as leaving and blocking. These features make the consequences of an action clearer during a fast-moving match.</p></section>
-        <section class="case-section case-prose"><h2>Explore the prototype and process</h2><p>The prototype covers ten flows around one simulated live match, with a guided tour, light and dark themes, and chat in English, Japanese, Spanish, and Korean. It uses demo data and placeholder club marks.</p><p>The full case study includes the alternatives and heuristic review behind the current design. This is a prototype demonstration; it does not establish a launched service or measured user outcomes.</p><p><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">Read the full MatchMate case study ↗<span class="sr-only"> (opens in a new tab)</span></a></p></section>
-        <footer><a href="../index.html#work">← All work</a><a href="project-02.html">Next project →</a></footer>
+    <header class="site-bar">
+        <div class="frame">
+            <a class="site-name" href="../index.html">Gavin Wang</a>
+            <nav class="site-nav" aria-label="Site">
+                <a href="../index.html#work" aria-current="page">Work</a>
+                <a href="../index.html#about">About</a>
+                <a href="../output/pdf/gavin-wang-resume.pdf" download>Résumé<span class="sr-only"> (PDF)</span></a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="frame page case-study">
+        <header class="case-header"><p class="label">01 · PRODUCT DESIGN</p><h1>MatchMate</h1><p class="intro">Find your fans. Share the match. A social matchday prototype for football fans watching far from home.</p></header>
+        <figure class="case-hero"><img src="../assets/images/matchmate/overview.png" width="1280" height="720" alt="MatchMate’s introduction alongside the Today screen and a live room with translated messages."><figcaption>The Today screen leads into a shared matchday conversation, with translation built into the room.</figcaption></figure>
+        <div class="case-layout">
+            <aside class="case-aside" aria-label="Project details">
+                <dl class="case-details">
+                <div><dt>My role</dt><dd>Solo project · research, product &amp; interaction design, prototyping</dd></div>
+                <div><dt>Timeline</dt><dd>Spring 2026 concept · Fall 2026 redesign</dd></div>
+                <div><dt>Format</dt><dd>iPhone app prototype</dd></div>
+                </dl>
+                <nav class="links prototype-links" aria-label="MatchMate project links"><a href="https://gavinw06x.github.io/matchmate/prototype.html" target="_blank" rel="noopener noreferrer">Try the prototype ↗<span class="sr-only"> (opens in a new tab)</span></a><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">Full process site ↗<span class="sr-only"> (opens in a new tab)</span></a></nav>
+                <nav class="case-contents" aria-label="Case study sections">
+                <a href="#problem">Problem</a><a href="#decisions">Design decisions</a><a href="#review">Heuristic review</a><a href="#testing">Testing next</a>
+                </nav>
+            </aside>
+            <div class="case-body">
+            <section id="problem" class="case-section case-prose" aria-labelledby="problem-title">
+                <h2 id="problem-title">Watching a match is easier than finding your people</h2>
+                <p>Fans who follow a club with a small local following can struggle to find people to watch with. Different languages, time zones, and leagues make that connection harder for international students, expats, and supporters living abroad.</p>
+                <p>MatchMate began as my Spring 2026 UX-course concept, where user interviews identified isolation among fans watching less mainstream leagues abroad. In Fall 2026 I redesigned the app’s information architecture and flows from scratch around shared live viewing. I did the research, design, and prototyping on my own.</p>
+            </section>
+
+            <section class="case-section case-prose" aria-labelledby="flow-title">
+                <h2 id="flow-title">From kickoff to a continuing connection</h2>
+                <ol class="case-flow"><li><strong>Find your match</strong><span>Today prioritizes followed clubs, live scores, local kickoff times, and reminders.</span></li><li><strong>Choose your room</strong><span>Compare languages, watchers, and chat speed before joining, or let Match me pick.</span></li><li><strong>Join the conversation</strong><span>Read translated messages, reveal the original text, and react to the room or individual goals.</span></li><li><strong>Stay connected after full time</strong><span>Explore the recap and follow the people you watched with.</span></li></ol>
+            </section>
+
+            <section id="decisions" class="case-section case-prose" aria-labelledby="decisions-title">
+                <h2 id="decisions-title">Decisions, side by side</h2>
+                <p>I made each major decision by building several options on the same screens and comparing them directly. Three of those rounds shaped the app most.</p>
+
+                <h3>1. Three visual directions for the same three screens</h3>
+                <p>I built Today, the match and room screen, and the live room in three directions, all with the same demo match and data. Only the Today screens are shown here.</p>
+                <figure class="screen-compare" style="--cols: 3">
+                    <div class="screen-compare-grid">
+                        <figure class="is-chosen"><img src="../assets/images/matchmate/direction-1a-today.png" width="600" height="1304" alt="Direction 1a, Matchday sheet: Today screen with a club filter, a live match block with score, a red Find a room button, and a table of later fixtures." loading="lazy"><figcaption><b>1a · Chosen</b>Matchday sheet. A modular grid read like a printed programme; red only for the live state and the main action.</figcaption></figure>
+                        <figure><img src="../assets/images/matchmate/direction-1b-today.png" width="600" height="1304" alt="Direction 1b, Poster: the live score 2–1 at display size on a full red background with a dark Join the match button." loading="lazy"><figcaption><b>1b</b>Poster. The live match as a red poster, with the score at display scale.</figcaption></figure>
+                        <figure><img src="../assets/images/matchmate/direction-1c-today.png" width="600" height="1304" alt="Direction 1c, Timeline: Today as a vertical rail of matches in the user's local time, with a Now marker." loading="lazy"><figcaption><b>1c</b>Timeline. Time as the spine of every screen, in your local time.</figcaption></figure>
+                    </div>
+                    <figcaption>1a’s grid and type became the base for the whole app.</figcaption>
+                </figure>
+
+                <h3>2. A calmer Today screen</h3>
+                <p>The first Today screen asked too much of a new user: a large title, a club filter, a fan count, a boxed reminder bell, and a solid red tab all competed for attention. I compared three simpler layouts. I chose 2a, which keeps the same structure with every extra layer removed: one date line, one live block, and one list for the week, with red marking only the main action and live state.</p>
+                <figure class="screen-compare">
+                    <div class="screen-compare-grid">
+                        <figure><img src="../assets/images/matchmate/direction-1a-today.png" width="600" height="1304" alt="Before: Today with a large title, a club filter row, a fan-count line, boxed reminder controls, and a solid red Find fans tab." loading="lazy"><figcaption><b>Before</b>Title, filter, and boxed controls compete with the live match.</figcaption></figure>
+                        <figure class="is-chosen"><img src="../assets/images/matchmate/today-2a.png" width="600" height="1304" alt="After, option 2a: one date line, the live match with a Find a room button, and a single This week list with text reminders." loading="lazy"><figcaption><b>After · 2a</b>One date line, one live block, one list.</figcaption></figure>
+                    </div>
+                    <figcaption>The alternatives were 2b, which let the live match fill the top of the screen with only two fixtures below, and 2c, which added a first-visit welcome tip. 2a was the safest change because it kept the existing structure.</figcaption>
+                </figure>
+
+                <h3>3. Join room: moving the accent from red to cobalt</h3>
+                <p>A solid red Join button reads as a warning, which is the opposite of an invitation. I tested four alternatives on the room list, each in light and dark mode. I chose cobalt blue: it is neutral, clashes with no club’s colors, and stays clear of the green associated with betting apps. The accent then moved to cobalt across the app.</p>
+                <figure class="screen-compare" style="--cols: 4">
+                    <div class="screen-compare-grid wrap-mobile">
+                        <figure><img src="../assets/images/matchmate/join-3a.png" width="600" height="657" alt="Option 3a: green Join room buttons, bright green in dark mode." loading="lazy"><figcaption><b>3a</b>Pitch green. Adds one color, used only for joining.</figcaption></figure>
+                        <figure class="is-chosen"><img src="../assets/images/matchmate/join-3b.png" width="600" height="657" alt="Option 3b: cobalt blue Join room buttons, lighter blue in dark mode." loading="lazy"><figcaption><b>3b · Chosen</b>Cobalt blue. Neutral and trustworthy.</figcaption></figure>
+                        <figure><img src="../assets/images/matchmate/join-3c.png" width="600" height="655" alt="Option 3c: red outlined Join room buttons." loading="lazy"><figcaption><b>3c</b>Red outline. Keeps the brand red without a solid block.</figcaption></figure>
+                        <figure><img src="../assets/images/matchmate/join-3d.png" width="600" height="656" alt="Option 3d: pale red tinted Join room buttons with dark red text." loading="lazy"><figcaption><b>3d</b>Soft red tint. Friendly, with no new color.</figcaption></figure>
+                    </div>
+                    <figcaption>Later rounds compared four corner-radius scales and five button-surface treatments; the prototype uses balanced radii and keeps the solid cobalt fill.</figcaption>
+                </figure>
+            </section>
+
+            <section id="review" class="case-section case-prose" aria-labelledby="review-title">
+                <h2 id="review-title">Checking every flow against Nielsen’s heuristics</h2>
+                <p>I reviewed every flow in the prototype against Nielsen’s ten usability heuristics, rating each finding on the 0–4 severity scale with a proposed fix. The core loop held up: a new user could find the live match, join a room, react, read translated messages, and reach a recap without dead ends. The largest gaps were in the live room’s edge cases and in actions that couldn’t be undone. There were no catastrophic issues and three major ones; six further priority fixes were rated minor.</p>
+                <table class="data-table">
+                    <caption>The three major findings and what changed in the prototype</caption>
+                    <thead><tr><th scope="col">Finding</th><th scope="col">Heuristic</th><th scope="col">Change</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Fans on a delayed stream would see goals before their screen showed them.</th><td>Error prevention</td><td>Joining a room asks whether your stream runs behind; if it does, scores and goals stay hidden until you choose to see them.</td></tr>
+                        <tr><th scope="row">Sent messages had no status, and a dropped connection simply froze the chat.</th><td>Visibility; error recovery</td><td>Messages show Sending and Not sent with Retry; a reconnecting banner keeps the draft.</td></tr>
+                        <tr><th scope="row">Leaving a room took one tap and couldn’t be undone; Block sat next to Message and Follow.</th><td>User control</td><td>Leaving, blocking, unfollowing, and deleting can be undone; Block asks first and explains what happens.</td></tr>
+                    </tbody>
+                </table>
+                <p class="template-note">All three are rated severity 3 (major) on Nielsen’s scale. The full review, including the minor findings, is on the process site.</p>
+            </section>
+
+            <section id="testing" class="case-section case-prose" aria-labelledby="testing-title">
+                <h2 id="testing-title">What I’m testing next</h2>
+                <div class="case-status">
+                    <p><strong>Not yet tested with fans.</strong> The decisions above come from comparing options and from an expert review, not from watching people use the prototype. The next step is a moderated usability test with football fans who watch away from their home community.</p>
+                </div>
+                <p>The test uses five tasks drawn from the review:</p>
+                <ol class="case-flow">
+                    <li><strong>Find tonight’s live match and join a room that reads in your language.</strong></li>
+                    <li><strong>Your stream is 30 seconds behind. Set up the room so it won’t spoil goals.</strong></li>
+                    <li><strong>Someone is being rude. Stop seeing their messages and report them.</strong></li>
+                    <li><strong>After full time, send a message to one person you watched with.</strong></li>
+                    <li><strong>Change your timezone, then check when Celtic play next.</strong></li>
+                </ol>
+                <p>I will record task success, time on task, and wrong turns, and check whether participants can explain a translated message and find its original. This section will report what they did, including what didn’t work.</p>
+            </section>
+
+            <section class="case-section case-prose" aria-labelledby="explore-title">
+                <h2 id="explore-title">Explore the prototype and process</h2>
+                <p>The prototype covers ten flows around one simulated live match, with a guided tour, light and dark themes, and chat in English, Japanese, Spanish, and Korean. It uses demo data and placeholder club marks. It is a prototype demonstration; it does not establish a launched service or measured user outcomes.</p>
+                <p><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">See every option and the full heuristic review ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
+            </section>
+            </div>
+        </div>
+        <nav class="case-pager" aria-label="More projects"><a href="../index.html#work">← All work</a><a href="project-01.html">QuadGo →</a></nav>
     </main>
+    <footer class="site-footer">
+        <div class="frame"><span>© 2026 Gavin Wang</span><a href="#main">Back to top ↑</a></div>
+    </footer>
 </body>
 </html>
