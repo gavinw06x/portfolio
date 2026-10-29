@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=oct29b">
+    <link rel="stylesheet" href="../styles.css?v=oct29s">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -17,26 +17,31 @@
             <a class="site-name" href="../index.html">Gavin Wang</a>
             <nav class="site-nav" aria-label="Site">
                 <a href="../index.html#projects" aria-current="page">Projects</a>
-                <a href="../index.html#about">About</a>
+                <a href="../about.html">About me</a>
             </nav>
         </div>
     </header>
     <main id="main" class="frame page case-study">
         <header class="case-header"><p class="label">01 · PRODUCT DESIGN</p><h1>MatchMate</h1><p class="intro">Find your fans. Share the match. A social matchday prototype for football fans watching far from home.</p></header>
         <figure class="case-hero"><img src="../assets/images/matchmate/overview.png" width="1280" height="720" alt="MatchMate’s introduction alongside the Today screen and a live room with translated messages."><figcaption>The Today screen leads into a shared matchday conversation, with translation built into the room.</figcaption></figure>
-        <div class="case-layout">
-            <aside class="case-aside" aria-label="Project details">
-                <dl class="case-details">
-                <div><dt>My role</dt><dd>Solo project · research, product &amp; interaction design, prototyping</dd></div>
-                <div><dt>Timeline</dt><dd>Spring 2026 concept · Fall 2026 redesign</dd></div>
-                <div><dt>Format</dt><dd>iPhone app prototype</dd></div>
-                </dl>
-                <nav class="links prototype-links" aria-label="MatchMate project links"><a href="https://gavinw06x.github.io/matchmate/prototype.html" target="_blank" rel="noopener noreferrer">Try the prototype ↗<span class="sr-only"> (opens in a new tab)</span></a><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">Full process site ↗<span class="sr-only"> (opens in a new tab)</span></a></nav>
-                <nav class="case-contents" aria-label="Case study sections">
-                <a href="#problem">Problem</a><a href="#decisions">Design decisions</a><a href="#review">Heuristic review</a><a href="#testing">Testing next</a>
+        <div class="case-layout case-layout--toc">
+            <aside class="case-aside" aria-label="Case study sections">
+                <nav class="case-toc" aria-label="Case study sections">
+                    <a href="#problem">Problem</a>
+                    <a href="#decisions">Design decisions</a>
+                    <a href="#review">Heuristic review</a>
+                    <a href="#testing">Testing next</a>
                 </nav>
             </aside>
             <div class="case-body">
+                <div class="case-meta">
+                    <dl class="case-details">
+                    <div><dt>My role</dt><dd>Solo project · research, product &amp; interaction design, prototyping</dd></div>
+                    <div><dt>Timeline</dt><dd>Spring 2026 concept · Fall 2026 redesign</dd></div>
+                    <div><dt>Format</dt><dd>iPhone app prototype</dd></div>
+                    </dl>
+                    <nav class="case-meta-links" aria-label="MatchMate project links"><a href="https://gavinw06x.github.io/matchmate/prototype.html" target="_blank" rel="noopener noreferrer">Try the prototype ↗<span class="sr-only"> (opens in a new tab)</span></a><a href="https://gavinw06x.github.io/matchmate/" target="_blank" rel="noopener noreferrer">Full process site ↗<span class="sr-only"> (opens in a new tab)</span></a></nav>
+                </div>
             <section id="problem" class="case-section case-prose" aria-labelledby="problem-title">
                 <h2 id="problem-title">Watching a match is easier than finding your people</h2>
                 <p>Fans who follow a club with a small local following can struggle to find people to watch with. Different languages, time zones, and leagues make that connection harder for international students, expats, and supporters living abroad.</p>
@@ -129,5 +134,6 @@
     <footer class="site-footer">
         <div class="frame"><span>© 2026 Gavin Wang</span><a href="#main">Back to top ↑</a></div>
     </footer>
+    <script src="../assets/js/case.js?v=5" defer></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=oct29b">
+    <link rel="stylesheet" href="../styles.css?v=oct29s">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
             <a class="site-name" href="../index.html">Gavin Wang</a>
             <nav class="site-nav" aria-label="Site">
                 <a href="../index.html#projects" aria-current="page">Projects</a>
-                <a href="../index.html#about">About</a>
+                <a href="../about.html">About me</a>
             </nav>
         </div>
     </header>
@@ -31,24 +31,35 @@
         </div>
         <p class="template-note">Home, campus activity discovery, and a sample workout plan. QuadGo is a design prototype; the activity totals, crowd levels, and rewards shown are demonstration content.</p>
         </div>
-        <div class="case-layout">
-            <aside class="case-aside" aria-label="Project details">
-                <dl class="case-details">
-                <div><dt>My role</dt><dd>UX Researcher &amp; Product Designer</dd></div>
-                <div><dt>Context</dt><dd>Four-person course project · Spring 2026</dd></div>
-                <div><dt>Research</dt><dd>18 students in needs-finding · 12 in summative testing</dd></div>
-                </dl>
-                <p class="prototype-link"><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Try the Figma prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></p>
-                <nav class="case-contents" aria-label="Case study sections">
-                <a href="#problem">Problem</a><a href="#research">Research</a><a href="#changes">Before &amp; after</a><a href="#evaluation">Evaluation</a><a href="#reflection">Reflection</a>
+        <div class="case-layout case-layout--toc">
+            <aside class="case-aside" aria-label="Case study sections">
+                <nav class="case-toc" aria-label="Case study sections">
+                    <a href="#contribution">My contribution</a>
+                    <a href="#problem">Problem</a>
+                    <a href="#research">Research</a>
+                    <a href="#changes">Before &amp; after</a>
+                    <a href="#evaluation">Evaluation</a>
+                    <a href="#reflection">Reflection</a>
                 </nav>
             </aside>
             <div class="case-body">
-            <section class="case-section case-prose" aria-labelledby="contribution-title">
+                <div class="case-meta">
+                    <dl class="case-details">
+                    <div><dt>My role</dt><dd>UX Researcher &amp; Product Designer</dd></div>
+                    <div><dt>Context</dt><dd>Four-person course project · Spring 2026</dd></div>
+                    <div><dt>Research</dt><dd>18 students in needs-finding · 12 in summative testing</dd></div>
+                    </dl>
+                    <nav class="case-meta-links" aria-label="Project links"><a href="https://www.figma.com/proto/0aW84qmDlwOg2IHuxpjqlN/QuadGo-Prototype?page-id=0%3A1&amp;node-id=1-2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer">Try the Figma prototype ↗<span class="sr-only"> (opens in a new tab)</span></a></nav>
+                </div>
+            <section id="contribution" class="case-section case-prose" aria-labelledby="contribution-title">
                 <h2 id="contribution-title">My contribution</h2>
-                <p>I worked with Dhruv Sawhney, Colin Roland, and Kaushik Setty on a four-person team. As UX researcher, I led the project’s three rounds of research and evaluation: surveys and interviews during needs-finding, a heuristic review and formative evaluation of our first prototype, and a summative study comparing the first and revised designs.</p>
-                <p>As product designer, I designed and built the Figma interface and interactive prototype: end-to-end user flows, a shared set of components and styles, and high-fidelity screens across onboarding, the dashboard, map, challenges, rewards, and social features. I implemented refinements from both evaluation rounds, folding in teammates’ suggestions; Dhruv also implemented updates after the summative study.</p>
-                <p>For the summative study I designed the comparison protocol and rating survey, moderated three of the twelve sessions, and set up the analysis. Each teammate moderated three sessions and contributed to the analysis and report.</p>
+                <p>On a four-person team with Dhruv Sawhney, Colin Roland, and Kaushik Setty, I owned three parts of the work:</p>
+                <ul>
+                    <li><strong>The Figma prototype.</strong> I designed and built the interface and the interactive prototype.</li>
+                    <li><strong>Iteration.</strong> I turned evaluation findings and teammates’ suggestions into the redesigned screens.</li>
+                    <li><strong>Usability testing.</strong> I designed the comparison study and moderated three of its twelve sessions.</li>
+                </ul>
+                <p>The early research and the final round of updates were shared across the team.</p>
             </section>
 
             <section id="problem" class="case-section case-prose" aria-labelledby="problem-title">
@@ -189,5 +200,6 @@
     <footer class="site-footer">
         <div class="frame"><span>© 2026 Gavin Wang</span><a href="#main">Back to top ↑</a></div>
     </footer>
+    <script src="../assets/js/case.js?v=5" defer></script>
 </body>
 </html>

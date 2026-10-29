@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Gavin Wang: landscape photography, food photography, and cooking.">
+    <title>About me — Gavin Wang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=oct29s">
+</head>
+<body>
+    <!-- Photos: web copies in assets/images/about/ (resized, metadata removed). Originals stay in photos-inbox/, which is not committed. -->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-bar">
+        <div class="frame">
+            <a class="site-name" href="index.html">Gavin Wang</a>
+            <nav class="site-nav" aria-label="Site">
+                <a href="index.html#projects">Projects</a>
+                <a href="about.html" aria-current="page">About me</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="frame page about-page">
+        <header class="statement">
+            <h1>About me</h1>
+            <div class="statement-text">
+                <p>I’m Gavin, a UX researcher and product designer at UIUC. Away from the screen, I photograph landscapes and food, and I cook. All three come down to noticing small details and arranging them so someone else enjoys the result.</p>
+                <nav class="statement-focus interest-index" aria-label="On this page"><a href="#landscape">Travel &amp; landscape photography</a> · <a href="#food">Food photography</a> · <a href="#cooking">Cooking</a></nav>
+            </div>
+        </header>
+
+        <section id="landscape" class="interest" aria-labelledby="landscape-title">
+            <div class="interest-head has-controls">
+                <h2 id="landscape-title">Travel &amp; landscape photography</h2>
+                <p>From the coast of Marseille to Paris, London, and New York.</p>
+                <div class="filmstrip-controls">
+                    <div class="filmstrip-progress" aria-hidden="true"><span></span></div>
+                    <button type="button" class="filmstrip-btn" data-dir="-1" aria-label="Scroll photos left">←</button>
+                    <button type="button" class="filmstrip-btn" data-dir="1" aria-label="Scroll photos right">→</button>
+                </div>
+            </div>
+            <div class="filmstrip-wrap">
+                <div class="filmstrip" tabindex="0" role="region" aria-label="Travel and landscape photos. Scroll sideways to see more.">
+                    <figure class="photo pop film-item" style="--r: 1.4988">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-marseille.jpg" decoding="async" width="1920" height="1281" alt="Limestone cliffs dropping into a deep blue inlet on the coast near Marseille." draggable="false"></div>
+                        <figcaption><span class="film-place">Marseille</span> · Calanques coast</figcaption>
+                    </figure>
+                    <figure class="photo pop film-item" style="--r: 0.6673">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-eiffel-tower.jpg" decoding="async" width="734" height="1100" alt="The Eiffel Tower lit up gold against the night sky." draggable="false"></div>
+                        <figcaption><span class="film-place">Paris</span> · Eiffel Tower</figcaption>
+                    </figure>
+                    <figure class="photo pop film-item" style="--r: 1.4981">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-winged-victory.jpg" decoding="async" width="1600" height="1068" alt="The Winged Victory of Samothrace at the top of a stone staircase." draggable="false" loading="lazy"></div>
+                        <figcaption><span class="film-place">Paris</span> · Winged Victory of Samothrace, the Louvre</figcaption>
+                    </figure>
+                    <figure class="photo pop film-item" style="--r: 1.4981">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-london-eye.jpg" decoding="async" width="1600" height="1068" alt="The London Eye on a clear day, seen across the Thames." draggable="false" loading="lazy"></div>
+                        <figcaption><span class="film-place">London</span> · London Eye</figcaption>
+                    </figure>
+                    <figure class="photo pop film-item" style="--r: 0.6673">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-new-york-skyline.jpg" decoding="async" width="734" height="1100" alt="The Midtown Manhattan skyline rising behind autumn trees and a wide lawn." draggable="false" loading="lazy"></div>
+                        <figcaption><span class="film-place">New York</span> · Central Park</figcaption>
+                    </figure>
+                    <figure class="photo pop film-item" style="--r: 1.4981">
+                        <div class="photo-frame"><img src="assets/images/about/landscape-new-york-mirrors.jpg" decoding="async" width="2000" height="1335" alt="A mirrored room reflecting purple and red lights and two visitors standing on a glass floor." draggable="false" loading="lazy"></div>
+                        <figcaption><span class="film-place">New York</span> · A room of mirrors</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="food" class="interest" aria-labelledby="food-title">
+            <div class="interest-head">
+                <h2 id="food-title">Food photography</h2>
+                <p>Restaurants I’ve photographed in Miami, Chicago, and Champaign.</p>
+            </div>
+            <div class="photo-justified mobile-three">
+                <figure class="photo pop" style="--r: 0.5621">
+                    <div class="photo-frame"><img src="assets/images/about/food-boia-de.jpg" decoding="async" width="787" height="1400" alt="Collage of small plates on round tables at Boia De, with a view into the bar." loading="lazy"></div>
+                    <figcaption>Boia De, Miami</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.5621">
+                    <div class="photo-frame"><img src="assets/images/about/food-cote-miami.jpg" decoding="async" width="787" height="1400" alt="Cuts of raw beef on a board beside a tabletop grill at Cote." loading="lazy"></div>
+                    <figcaption>Cote, Miami</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.5621">
+                    <div class="photo-frame"><img src="assets/images/about/food-miami-seafood.jpg" decoding="async" width="787" height="1400" alt="Collage of a seafood dinner: lamb chops, fries, pasta, and small plates." loading="lazy"></div>
+                    <figcaption>Seafood dinner, Miami</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.7500">
+                    <div class="photo-frame"><img src="assets/images/about/food-elske.jpg" decoding="async" width="1050" height="1400" alt="A grid of nine tasting-menu courses on a wooden table at Elske." loading="lazy"></div>
+                    <figcaption>Elske, Chicago</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.5629">
+                    <div class="photo-frame"><img src="assets/images/about/food-milano.jpg" decoding="async" width="788" height="1400" alt="Anniversary dinner collage at Milano: bread, pasta, a plated main, and dessert." loading="lazy"></div>
+                    <figcaption>Milano, Champaign</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.5621">
+                    <div class="photo-frame"><img src="assets/images/about/food-steakhouse.jpg" decoding="async" width="787" height="1400" alt="Steak dinner for a second anniversary: a bone-in ribeye, sides, and a chocolate dessert." loading="lazy"></div>
+                    <figcaption>Steakhouse dinner</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="cooking" class="interest" aria-labelledby="cooking-title">
+            <div class="interest-head">
+                <h2 id="cooking-title">Cooking</h2>
+                <p>What I cook at home, from Chinese family dinners to a good steak.</p>
+            </div>
+            <div class="photo-justified mobile-one">
+                <figure class="photo pop" style="--r: 1.3333">
+                    <div class="photo-frame"><img src="assets/images/about/cooking-stir-fries.jpg" decoding="async" width="1400" height="1050" alt="Two home-cooked Chinese stir-fries on white plates." loading="lazy"></div>
+                    <figcaption>Chinese home cooking</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 1.3333">
+                    <div class="photo-frame"><img src="assets/images/about/cooking-family-dinner.jpg" decoding="async" width="1400" height="1050" alt="A Chinese family dinner spread: shrimp, braised noodles, a vegetable soup, and side dishes." loading="lazy"></div>
+                    <figcaption>Family Chinese dinner</figcaption>
+                </figure>
+                <figure class="photo pop" style="--r: 0.7500">
+                    <div class="photo-frame"><img src="assets/images/about/cooking-steak.jpg" decoding="async" width="1050" height="1400" alt="A sliced medium-rare steak with asparagus and mushrooms on a cutting board and a plate." loading="lazy"></div>
+                    <figcaption>Steak, asparagus, and mushrooms</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="closing" aria-label="Photo booth">
+                    <figure class="photo photo-print">
+                        <img src="assets/images/about/photo-booth-strip.jpg" decoding="async" width="600" height="1600" alt="A four-frame photo booth strip of Gavin and his girlfriend." loading="lazy">
+                    </figure>
+            <p class="closing-line">And the person I share most of these trips and meals with.</p>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="contact-line">Open to Summer 2027 internships in UX and product design.</h2>
+            <ul class="contact-links">
+                <li><a href="mailto:gavinwang06x@gmail.com">gavinwang06x@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/gavinwang62" target="_blank" rel="noopener noreferrer">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="frame"><span>© 2026 Gavin Wang</span><a href="#main">Back to top ↑</a></div>
+    </footer>
+    <dialog class="lightbox" aria-label="Photo viewer">
+        <div class="lightbox-inner">
+            <figure class="lightbox-figure">
+                <img class="lightbox-image" alt="">
+                <figcaption class="lightbox-caption"><span class="lightbox-text"></span><span class="lightbox-count"></span></figcaption>
+            </figure>
+            <button type="button" class="lightbox-btn lightbox-prev" aria-label="Previous photo">←</button>
+            <button type="button" class="lightbox-btn lightbox-next" aria-label="Next photo">→</button>
+            <button type="button" class="lightbox-btn lightbox-close" aria-label="Close photo viewer">Close</button>
+        </div>
+    </dialog>
+    <script src="assets/js/about.js?v=5" defer></script>
+</body>
+</html>

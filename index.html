@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=oct29b">
+    <link rel="stylesheet" href="styles.css?v=oct29s">
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
             <a class="site-name" href="#main">Gavin Wang</a>
             <nav class="site-nav" aria-label="Site">
                 <a href="#projects">Projects</a>
-                <a href="#about">About</a>
+                <a href="about.html">About me</a>
             </nav>
         </div>
     </header>
@@ -26,7 +26,7 @@
             <h1>Gavin Wang</h1>
             <div class="statement-text">
                 <p>UX researcher and product designer studying Information Sciences at UIUC. I focus on human–computer interaction, turning user research into clear information architecture, interaction flows, and testable prototypes.</p>
-                <p class="statement-focus">UX research · Interaction design · Information architecture · Prototyping</p>
+                <p class="statement-focus">UX research · Interaction design · Information architecture · Prototyping · Digital media</p>
             </div>
         </header>
         <section id="projects" class="section" aria-labelledby="projects-title">
@@ -75,22 +75,24 @@
             </article>
             </div>
         </section>
-        <section id="about" class="section about" aria-labelledby="about-title">
-            <h2 id="about-title" class="section-title">About</h2>
-            <div class="about-grid">
-                <div class="about-prose">
-                    <p class="about-lead">My interests sit at the intersection of information, design, and digital media.</p>
-                    <p>I’m interested in how people interact with digital systems, and how research, visual design, and technology can make those experiences clearer and more intuitive.</p>
-                    <p>I’m looking for a Summer 2027 internship in UX or product design. Get in touch to talk about opportunities or my work.</p>
+        <aside class="about-teaser" aria-labelledby="teaser-title">
+            <a class="about-teaser-link" href="about.html">
+                <figure class="photo pop" style="--ratio: 3 / 2">
+                    <div class="photo-frame"><img src="assets/images/about/landscape-marseille.jpg" decoding="async" width="1920" height="1281" alt="Limestone cliffs dropping into a deep blue inlet on the coast near Marseille." loading="lazy"></div>
+                </figure>
+                <div class="about-teaser-text">
+                    <h2 id="teaser-title" class="section-title">Outside of design</h2>
+                    <p>When I’m not designing, I photograph landscapes and food, and I cook.</p>
+                    <span class="work-cta">More about me <span aria-hidden="true">→</span></span>
                 </div>
-                <dl class="about-details">
-                    <div><dt>Studying</dt><dd>Information Sciences, University of Illinois Urbana-Champaign</dd></div>
-                    <div><dt>Exploring</dt><dd>Product design, UX research, HCI, digital media</dd></div>
-                    <div><dt>Outside of</dt><dd>Photography, music, creative technology</dd></div>
-                    <div><dt>Email</dt><dd><a href="mailto:gavinwang06x@gmail.com">gavinwang06x@gmail.com</a></dd></div>
-                    <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/gavinwang62" target="_blank" rel="noopener noreferrer">gavinwang62 ↗<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
-                </dl>
-            </div>
+            </a>
+        </aside>
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="contact-line">Open to Summer 2027 internships in UX and product design.</h2>
+            <ul class="contact-links">
+                <li><a href="mailto:gavinwang06x@gmail.com">gavinwang06x@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/gavinwang62" target="_blank" rel="noopener noreferrer">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ul>
         </section>
     </main>
     <footer class="site-footer">
