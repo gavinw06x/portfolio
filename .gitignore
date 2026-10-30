@@ -6,3 +6,6 @@ docs/
 
 # Original photos dropped in for the About me page (resized copies go to assets/images/about/)
 photos-inbox/
+
+# Briefs and reference images for Claude Design (not part of the site)
+claude-design-brief/
